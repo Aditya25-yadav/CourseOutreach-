@@ -1,80 +1,77 @@
-🚀 CourseReach AI
+# 🚀 CourseReach AI
 
-«AI-Powered Lead Discovery, Qualification, and Personalized Outreach Platform for Educational Businesses»
+> AI-Powered Lead Discovery, Qualification & Personalized Outreach Platform for Educational Businesses
 
-"Next.js" (https://img.shields.io/badge/Next.js-15-black)
-"FastAPI" (https://img.shields.io/badge/FastAPI-Latest-green)
-"PostgreSQL" (https://img.shields.io/badge/PostgreSQL-Database-blue)
-"OpenAI" (https://img.shields.io/badge/OpenAI-LLM-orange)
-"License" (https://img.shields.io/badge/License-MIT-yellow)
-
-📖 Overview
-
-CourseReach AI is an intelligent lead discovery and outreach platform designed for educational organizations, training institutes, and EdTech companies.
-
-The platform automates the process of:
-
-- Discovering potential leads
-- Qualifying prospects using AI
-- Recommending relevant courses
-- Generating personalized outreach emails
-- Managing marketing campaigns
-- Tracking engagement analytics
-
-Instead of sending generic marketing messages, CourseReach AI uses AI agents to understand lead profiles and generate personalized communication tailored to each prospect.
+![Next.js](https://img.shields.io/badge/Next.js-15-black)
+![FastAPI](https://img.shields.io/badge/FastAPI-Latest-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![OpenAI](https://img.shields.io/badge/OpenAI-LLM-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
-✨ Key Features
+## 📖 Overview
 
-🔍 Lead Discovery
+CourseReach AI is an AI-powered lead discovery and outreach platform designed for educational organizations, training institutes, and EdTech companies.
 
-- Public business source integration
-- Lead import via CSV
-- Company and contact management
-- Duplicate lead detection
-- Lead filtering and segmentation
+The platform automates:
 
-🤖 AI Lead Qualification
+- Lead Discovery
+- Lead Qualification
+- Course Recommendation
+- Personalized Outreach Generation
+- Campaign Management
+- Analytics & Reporting
 
-- Industry identification
-- Job role classification
-- Relevance scoring
-- Prospect segmentation
+Using AI agents, the platform analyzes lead profiles, recommends suitable courses, generates personalized outreach messages, and tracks campaign performance.
 
-🎯 Course Recommendation Engine
+---
 
-- Match leads to relevant courses
-- Skill-based recommendations
-- Industry-aware suggestions
+## ✨ Features
 
-✉️ Personalized Outreach
+### 🔍 Lead Discovery
+- Import leads through CSV
+- Public business directory integration
+- Lead organization and filtering
+- Duplicate detection
 
+### 🤖 AI Lead Qualification
+- Industry classification
+- Role identification
+- Lead scoring
+- Audience segmentation
+
+### 🎯 Course Recommendation
+- Intelligent course matching
+- Industry-aware recommendations
+- Skill-based targeting
+
+### ✉️ Personalized Outreach
 - AI-generated email subjects
 - Personalized email content
-- Follow-up sequences
+- Follow-up email generation
 - Campaign-specific messaging
 
-📊 Analytics Dashboard
+### 📊 Analytics Dashboard
+- Total Leads
+- Qualified Leads
+- Open Rate
+- Click Rate
+- Reply Rate
+- Campaign Performance
 
-- Lead statistics
-- Open rates
-- Click rates
-- Reply tracking
-- Campaign performance metrics
-
-🔐 Secure & Scalable
-
+### 🔐 Security
 - JWT Authentication
 - Role-Based Access Control
+- Password Hashing
 - Rate Limiting
 - Audit Logging
-- Docker Deployment
 
 ---
 
-🏗️ System Architecture
+## 🏗️ System Architecture
 
+```text
                 ┌─────────────────┐
                 │   Frontend UI   │
                 │    Next.js      │
@@ -85,12 +82,13 @@ Instead of sending generic marketing messages, CourseReach AI uses AI agents to 
                 │  FastAPI Backend│
                 └────────┬────────┘
                          │
+
       ┌──────────────────┼──────────────────┐
       ▼                  ▼                  ▼
 
 ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
-│ Qualification│   │ Course Match│   │ Outreach AI │
-│    Agent     │   │    Agent    │   │    Agent    │
+│Qualification│   │Course Match │   │Outreach AI  │
+│   Agent     │   │    Agent    │   │    Agent    │
 └─────────────┘   └─────────────┘   └─────────────┘
 
                          │
@@ -107,40 +105,38 @@ Instead of sending generic marketing messages, CourseReach AI uses AI agents to 
                 │ Email Provider  │
                 │ Resend/SendGrid │
                 └─────────────────┘
+```
 
 ---
 
-🛠 Tech Stack
+## 🛠️ Tech Stack
 
-Frontend
-
+### Frontend
 - Next.js 15
 - TypeScript
 - Tailwind CSS
 - Shadcn UI
 
-Backend
-
+### Backend
 - FastAPI
 - SQLAlchemy
 - PostgreSQL
 - Redis
 
-AI Layer
-
+### AI Layer
 - OpenAI API
 - Agent-Based Workflow
 
-Infrastructure
-
+### Infrastructure
 - Docker
 - Docker Compose
 - Nginx
 
 ---
 
-📂 Project Structure
+## 📂 Project Structure
 
+```bash
 course-reach-ai/
 
 ├── frontend/
@@ -160,48 +156,58 @@ course-reach-ai/
 │   ├── workers/
 │   └── utils/
 │
-├── docker/
 ├── docs/
+├── docker/
 ├── scripts/
 │
 ├── docker-compose.yml
 ├── .env.example
 └── README.md
+```
 
 ---
 
-⚙️ Installation
+## ⚙️ Installation
 
-Clone Repository
+### Clone Repository
 
+```bash
 git clone https://github.com/yourusername/course-reach-ai.git
 
 cd course-reach-ai
+```
 
-Backend Setup
+### Backend Setup
 
+```bash
 cd backend
 
 python -m venv venv
 
+# Linux/Mac
 source venv/bin/activate
+
 # Windows
 venv\Scripts\activate
 
 pip install -r requirements.txt
+```
 
-Frontend Setup
+### Frontend Setup
 
+```bash
 cd frontend
 
 npm install
+```
 
 ---
 
-🔑 Environment Variables
+## 🔑 Environment Variables
 
-Create a ".env" file:
+Create a `.env` file:
 
+```env
 DATABASE_URL=postgresql://user:password@localhost/course_reach
 
 OPENAI_API_KEY=your_openai_key
@@ -213,131 +219,217 @@ REDIS_URL=redis://localhost:6379
 EMAIL_PROVIDER=resend
 
 RESEND_API_KEY=your_api_key
+```
 
 ---
 
-▶️ Running the Application
+## ▶️ Running the Application
 
-Start Backend
+### Start Backend
 
+```bash
 uvicorn main:app --reload
+```
 
-Start Frontend
+### Start Frontend
 
+```bash
 npm run dev
+```
 
-Access Application
+### Access Application
 
-Frontend:
-http://localhost:3000
-
-Backend:
-http://localhost:8000
-
-Swagger Docs:
-http://localhost:8000/docs
+| Service | URL |
+|----------|----------|
+| Frontend | http://localhost:3000 |
+| Backend | http://localhost:8000 |
+| API Docs | http://localhost:8000/docs |
 
 ---
 
-🐳 Docker Deployment
+## 🐳 Docker Deployment
 
-Build and run:
+Build and start containers:
 
+```bash
 docker-compose up --build
+```
 
 Run in background:
 
+```bash
 docker-compose up -d
+```
 
 Stop containers:
 
+```bash
 docker-compose down
+```
 
 ---
 
-📊 Core AI Workflow
+## 🤖 AI Workflow
 
+```text
 Lead Discovery
-        │
-        ▼
+      ↓
 Lead Qualification
-        │
-        ▼
+      ↓
 Course Recommendation
-        │
-        ▼
+      ↓
 Personalized Email Generation
-        │
-        ▼
+      ↓
 Campaign Management
-        │
-        ▼
+      ↓
 Email Delivery
-        │
-        ▼
+      ↓
 Analytics Tracking
+```
 
 ---
 
-📈 Future Roadmap
+## 📊 Database Schema
+
+### Users
+
+```sql
+id
+name
+email
+password_hash
+role
+created_at
+```
+
+### Leads
+
+```sql
+id
+name
+email
+company
+industry
+designation
+website
+location
+source
+relevance_score
+recommended_course
+created_at
+```
+
+### Courses
+
+```sql
+id
+title
+description
+category
+price
+created_at
+```
+
+### Campaigns
+
+```sql
+id
+name
+course_id
+status
+created_at
+```
+
+### Outreach Messages
+
+```sql
+id
+lead_id
+campaign_id
+subject
+message
+status
+sent_at
+```
+
+---
+
+## 📈 Future Enhancements
 
 - CRM Integrations
-- WhatsApp Business Support
+- WhatsApp Business Integration
 - AI Campaign Optimization
 - Multi-Tenant SaaS Architecture
 - Advanced Lead Scoring
 - Automated Reporting
-- Team Collaboration Features
+- Team Collaboration
 - Workflow Automation
 
 ---
 
-🎯 Use Cases
+## 🎯 Use Cases
 
-Educational Platforms
+### Educational Platforms
+Promote certification programs and online courses.
 
-Promote certification and professional development programs.
+### Training Institutes
+Reach professionals interested in upskilling.
 
-Training Institutes
+### Corporate Learning Providers
+Identify organizations seeking employee training programs.
 
-Reach targeted professionals and students.
-
-Corporate Learning Providers
-
-Identify organizations interested in employee upskilling.
-
-EdTech Startups
-
-Scale lead generation and outreach efficiently.
+### EdTech Startups
+Scale outreach and lead generation efficiently.
 
 ---
 
-🤝 Contributing
+## 🤝 Contributing
 
-Contributions are welcome.
+Contributions are welcome!
 
 1. Fork the repository
+
 2. Create a feature branch
+
+```bash
+git checkout -b feature-name
+```
+
 3. Commit changes
-4. Open a Pull Request
+
+```bash
+git commit -m "Add feature"
+```
+
+4. Push to GitHub
+
+```bash
+git push origin feature-name
+```
+
+5. Open a Pull Request
 
 ---
 
-📜 License
+## 📜 License
 
-MIT License
+This project is licensed under the MIT License.
 
 ---
 
-👨‍💻 Author
+## 👨‍💻 Author
 
-Aditya Yadav
+**Aditya Yadav**
 
-Built as an AI-powered SaaS project combining:
+Built with:
 
-- Large Language Models (LLMs)
-- Agentic AI Workflows
+- Next.js
 - FastAPI
 - PostgreSQL
-- Next.js
-- Marketing Automation
+- OpenAI
+- Docker
+- Agentic AI Workflows
+
+---
+
+⭐ If you found this project useful, consider giving it a star on GitHub.
